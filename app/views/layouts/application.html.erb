@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Snake Pit App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<nav class="navbar navbar-custom navbar-fixed-top">
+	  <div class="container">
+	    <div class="navbar-header">
+	      <a class="navbar-brand" href="#">
+	        <%= image_tag 'logo.jpg', :class => "brand img-circle", width: "40px" %>
+	      </a>
+	    </div>
+	  </div>
+	</nav>
+	<div class="header-img">
+		<div id="header-overlay"></div>
+		<h1 class="greet">Welcome to the Snake Pit</h1>
+	</div>
+	<div class="container nav-margin">
+		<div class="row">
+			<div class="col-md-12">
+				<%= yield %>
+			</div>
+		</div>
+	  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+</body>
+</html>

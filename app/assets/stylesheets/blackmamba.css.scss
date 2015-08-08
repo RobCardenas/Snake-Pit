@@ -1,0 +1,45 @@
+body {
+	background-color: #fff;
+}
+
+.navbar {
+	height: 75px;
+}
+
+.navbar-custom {
+  background-color: #fff;
+  border-color: #e7e7e7;
+}
+
+.nav-margin {
+	margin-top: 75px;
+}
+
+.header-img {
+	background-image: image-url('header-img.jpg');
+	background-position: center bottom;
+	margin-top: 75px;
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  position: relative;
+}
+
+#header-overlay {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: black;
+   opacity: 0.55;
+}
+
+.greet {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 10px;
+    color: #fff;
+}
+
