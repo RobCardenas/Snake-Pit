@@ -20,7 +20,7 @@ body {
 	background-position: center bottom;
 	margin-top: 75px;
   width: 100%;
-  height: 400px;
+  height: 260px;
   background-size: cover;
   position: relative;
 }
@@ -37,9 +37,57 @@ body {
 
 .greet {
     position: absolute;
+    font-size: 1.5em;
     bottom: 0;
     left: 0;
     margin: 10px;
     color: #fff;
+}
+
+/*footer*/
+
+.social a {
+  color: #fff;
+}
+
+.social a:hover {
+  color: #1772e8;
+  text-decoration: none;
+}
+
+footer#footer-social-links {
+    margin: 0px 0px 0px 0px;
+    padding: 0;
+}
+
+footer ul li {
+  display: block;
+    float: left;
+  list-style: none;
+    padding: 0;
+    margin: 0 0 10px 25px;
+}
+
+#footer-bottom {
+  border-top: 1px dotted #acacac;
+  margin-top: 30px;
+  margin-bottom: 20px;
+    padding-top: 10px;
+}
+
+.footer-div {
+  background: #1e1e1e;
+  color: #fff;
+  margin-top: 30px;
+  clear: both;
+}
+
+/*===== MEDIA QUERIES =====*/
+
+@media (min-width: 768px) {
+  .header-img {
+    height: 400px;
+    font-size: 2em;
+  }
 }
 
