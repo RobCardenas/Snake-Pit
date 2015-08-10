@@ -1,8 +1,16 @@
 <h1>Profile Page</h1>
 <div>
-	<%= current_user.username %>
-	<%= current_user.email %>
+	<h3>Welcome back <%= current_user.username %></h3>
 </dvi>
 
-<h3>My Posts</h3>
-<%= current_user.posts %>
+<% if current_user.posts.any? %>
+	<h3>My Posts</h3>
+	<% current_user.posts.each do |post| %>
+		<%= post.title %><br>
+		<%= post.content %><br>
+		<%= link_to "Edit Post", edit_post_path(post) %>
+	<% end %>
+<% else %>
+	<h3>You haven't made any posts.</h3>
+	<%= link_to "Be awesome and post some venom", new_post_path %>
+<% end %> 

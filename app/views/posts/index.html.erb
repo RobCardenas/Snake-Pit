@@ -1,1 +1,15 @@
+<h1>Posts</h1>
+<% @posts.each do |post| %>
+	<%= post.title %><br>
+	<%= post.content %><br>
+	<%= link_to "View Full Post", post_path(post) %>
+<% end %>
+
+<% if current_user %>
+	<%= link_to "Add a new post", new_post_path %>
+<% end %>
+
+
+
+
 

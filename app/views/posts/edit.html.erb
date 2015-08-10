@@ -1,0 +1,9 @@
+<h1>Edit Post</h1>
+<%= form_for @post do |f| %>
+  <%= f.text_field :title, placeholder: "Edit Title" %><br>
+  <%= f.text_field :content, placeholder: "Edit Blog Post" %><br>
+  <hr>
+  <%= f.submit "Update Post" %>
+	<%= link_to "Delete Post", @post, :confirm => "Are you positive?", :method => :delete %>
+<% end %>
+
